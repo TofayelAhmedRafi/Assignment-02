@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JOXNEWS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fullBody"><!-- Full Body Start-->
+
+        <!-- Header Top -->
+        <header container py-4>
+            <div class="header-top container d-flex align-items-center justify-content-between flex-wrap">
+                <input type="text" class="search-box" placeholder="Search countries" />
+            <!-- Logo -->
+            <div class="header-logo mx-auto">JOXNEWS</div>
+
+            <!-- Search + Cart + Subscribe -->
+            <div class="d-flex align-items-center" style="gap: 15px;">
+                
+                <div class="cart-indicator">
+                Cart <span>0</span>
+                </div>
+                <button class="btn-subscribe">Subscribe</button>
+            </div>
+            </div>
+
+            <!-- Menu Toggle & Close Buttons (Positioned absolutely) -->
+            <button class="menu-toggle" id="openMenu" onclick="toggleMenu(true)">
+            &#9776;
+            </button>
+            <button class="close-btn" id="closeMenu" onclick="toggleMenu(false)">
+            &times;
+            </button>
+
+            <!-- Second Menu -->
+            <div class="top-menu" id="menuBar">
+            <div class="container d-flex justify-content-center">
+                <nav class="nav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Latest News</a>
+                <a class="nav-link" href="#">Author</a>
+                <a class="nav-link" href="#">Subscription</a>
+                <a class="nav-link" href="#">Podcast</a>
+                <a class="nav-link" href="#">Contact</a>
+                </nav>
+            </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <nav class="nav">
+                <a class="nav-link" href="#">Entertainment</a>
+                <a class="nav-link" href="#">Sports</a>
+                <a class="nav-link" href="#">Politics</a>
+                <a class="nav-link" href="#">Business</a>
+                <a class="nav-link" href="#">Technology</a>
+                <a class="nav-link" href="#">Health</a>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Top End -->
+
+        <!-- Hero -->
+         <div class="custom-container py-4">
+            <div class="row g-4">
+            
+            <!-- Main Left Article -->
+            <div class="col-lg-8">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab57c49d82b47778711b6_hero-main01-p-800.jpg" class="img-fluid rounded mb-3" alt="Main News">
+                <h2 class="fw-bold">Global Climate Summit Yields Mixed Results on Key Agreements</h2>
+                <p>The global stock market has reached unprecedented levels, buoyed by optimistic economic forecasts and strong corporate earnings.</p>
+                <div class="d-flex align-items-center mt-3">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/676402067bb693df70b960ce_team-thumb-03.jpg" class="rounded-circle me-2" alt="Author">
+                <div>
+                    <div class="fw-semibold">Michael Brown</div>
+                    <small class="text-muted">December 16, 2024</small>
+                </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Right Articles -->
+            <div class="col-lg-4">
+                
+                <div class="d-flex mb-4">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab5936d92f24d6c58435f_hero-thumb-02.jpg" class="img-fluid rounded me-3" alt="Story 1"     width="190px" height="120px">
+        >
+                <div>
+                    <h6 class="mb-1">New Regulations Put Tech Giants Under the Spotlight</h6>
+                    <small class="text-muted">Technology · 6 Min</small>
+                </div>
+                </div>
+                
+                <div class="d-flex mb-4">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab5c42802d48df9d4a40d_hero-thumb-04.jpg" class="img-fluid rounded me-3" alt="Story 2" width="190px" height="120px">
+                <div>
+                    <h6 class="mb-1">Health Innovations to Watch in 2024</h6>
+                    <small class="text-muted">Health · 7 Min</small>
+                </div>
+                </div>
+                
+                <div class="d-flex mb-4">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab5ad84d961423e046877_hero-thumb-03.jpg" class="img-fluid rounded me-3" alt="Story 3" width="190px" height="120px">
+                <div>
+                    <h6 class="mb-1">Stock Market Hits Record High Amid Economic Optimism</h6>
+                    <small class="text-muted">Business · 9 Min</small>
+                </div>
+                </div>
+                
+                <div class="d-flex">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675bfe1047fe946816d541cb_blockchain-p-500.jpg" class="img-fluid rounded me-3" alt="Story 4" width="190px" height="120px">
+                <div>
+                    <h6 class="mb-1">Blockchain Beyond Cryptocurrency: Revolutionizing Industries</h6>
+                    <small class="text-muted">Technology · 5 Min</small>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+                <!-- Hero End -->
+
+                <!-- Latest News -->
+                <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Latest News</h2>
+            <a href="#" class="text-decoration-none">View All →</a>
+        </div>
+        <div class="row g-4">
+            <!-- Main News -->
+            <div class="col-lg-6">
+            <div class="main-article position-relative">
+                <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab6b87df7ad49eb7ca2f3_politics-main01-p-800.jpg" class="img-fluid rounded" alt="Main News" >
+                <div class="mt-3">
+                <div class="meta mb-2">Politics | 8 Min</div>
+                <div class="news-title">Global Summit 2024: Leaders Address Climate, Trade, and Security Challenges</div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Right Side News Grid -->
+            <div class="col-lg-6">
+            <div class="row g-3">
+                <!-- Card 1 -->
+                <div class="col-md-6">
+                <div class="card border-0">
+                    <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675bfe1047fe946816d541cb_blockchain-p-1600.jpg" class="card-img-top rounded" alt="News 1">
+                    <div class="card-body p-0 pt-2">
+                    <div class="meta mb-1">Technology | 5 Min</div>
+                    <p class="card-text">Blockchain Beyond Cryptocurrency: Revolutionizing Industries</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                <div class="card border-0">
+                    <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab4e6e263f78becf88d20_editor-thumb-02.jpg" class="card-img-top rounded" alt="News 2">
+                    <div class="card-body p-0 pt-2">
+                    <div class="meta mb-1">Technology | 9 Min</div>
+                    <p class="card-text">Exploring the Future of Space Exploration Beyond Mars</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6">
+                <div class="card border-0">
+                    <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab86c7df7ad49eb7e244a_health-thumb-04-p-500.jpg" class="card-img-top rounded" alt="News 3">
+                    <div class="card-body p-0 pt-2">
+                    <div class="meta mb-1">Health | 5 Min</div>
+                    <p class="card-text">The Role of Fitness in Chronic Disease Management</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6">
+                <div class="card border-0">
+                    <img src="https://cdn.prod.website-files.com/675960be6039e11b713ee298/675ab4cb80ca717d63dfba3f_editor-thumb-03-p-500.jpg" class="card-img-top rounded" alt="News 4">
+                    <div class="card-body p-0 pt-2">
+                    <div class="meta mb-1">Technology | 6 Min</div>
+                    <p class="card-text">The Science of Sleep: How to Rest Better in a 24/7 World</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div> <!-- end of col-lg-6 -->
+        </div>
+        </div>
+        <!-- Latest News End -->
+         <!-- Letest section  -->
+          <section class="letest-section"></section>
+    </div> <!-- Full Body End-->
+
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
